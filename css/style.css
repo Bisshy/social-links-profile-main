@@ -1,0 +1,140 @@
+/*||RESET*/
+*, 
+*::before,
+*::after{
+ margin: 0;
+ padding:0;
+ box-sizing:border-box;
+}
+
+img{
+    display:block;
+    width:100%;
+    height:auto;
+    
+}
+.offscreen{
+    position:absolute;
+    left:-1000px;
+}
+
+
+/*||VARIABLES*/
+:root{
+    /*COLOR*/
+    --BG-COLOR:hsl(0, 0%, 8%);
+    --MAIN-COLOR:hsl(0, 0%, 12%);
+    --FONT-COLOR:hsl(0, 0%, 100%);
+    --LINK-BG-COLOR:hsl(0, 0%, 20%);
+    --H2-COLOR:hsl(75, 94%, 57%);
+    /*PADDING*/
+    --PADDING:2rem;
+}
+
+
+
+/*||FONTS*/
+@font-face{
+    font-family: Inter-Bold;
+    src: url(../assets/fonts/static/Inter-Bold.ttf);
+    font-weight:700;
+    font-size: 14px;
+}
+@font-face {
+    font-family: Inter-Regular;
+    src: url(../assets/fonts/static/Inter-Regular.ttf);
+    font-weight:400;
+    font-size: 14px;
+}
+@font-face{
+    font-family: Inter-SemiBold;
+    src:url(../assets/fonts/static/Inter-SemiBold.ttf);
+    font-weight:600;
+ 
+}
+
+/*||GENERAL STYLES*/
+body{
+    display:grid;
+    place-content:center;
+    min-height:100vh;
+    background-color: var(--BG-COLOR);
+}
+
+.main{
+    background-color: var(--MAIN-COLOR);
+    min-width:350px;
+    padding:var(--PADDING);
+    border-radius: 15px;
+    color:var(--FONT-COLOR);
+    line-height:2rem;
+    text-align: center;
+}
+
+.main__section{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    
+    
+}
+.main__img{
+    border-radius: 50%;
+    height:100px;
+    width:100px;
+    margin:auto;
+}
+
+.main__h1{
+    font-family: Inter-Bold;
+    margin-top:1rem;
+    
+}
+
+.main__h2{
+    font-family:Inter-SemiBold;
+    font-size:14px;
+    color:var(--H2-COLOR);
+    line-height:1;
+    margin-top: 0.5em;
+}
+
+.main__p{
+    font-family:Inter-Regular;
+    font-size:14px;
+    color:var(--FONT-COLOR);
+    margin-top:1rem;
+}
+
+
+
+.main__ul{
+    list-style-type: none;
+}
+
+
+
+a{
+    display:block;
+}
+
+a, a:visited{
+    color:white;
+    text-decoration: none;
+    color:var(--FONT-COLOR);
+    font-family:Inter-Regular;
+    border-radius: 5px;
+    margin-top:1rem;
+    background-color: var(--LINK-BG-COLOR);
+ 
+}
+
+a:hover, a:focus{
+    background-color:rgb(148, 148, 52);
+    color:antiquewhite;
+    cursor:pointer;
+}
+a:active{
+    color:blue;
+}
+
