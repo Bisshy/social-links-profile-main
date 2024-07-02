@@ -54,14 +54,15 @@ img{
 }
 
 /*||GENERAL STYLES*/
-body{
+
+html{
     display:grid;
     place-content:center;
     min-height:100vh;
     background-color: var(--BG-COLOR);
-}
 
-.main{
+}
+body{
     background-color: var(--MAIN-COLOR);
     min-width:350px;
     padding:var(--PADDING);
@@ -69,23 +70,25 @@ body{
     color:var(--FONT-COLOR);
     line-height:2rem;
     text-align: center;
+   
 }
 
-.main__section{
+
+.header__section{
     display:flex;
     justify-content:center;
     align-items:center;
     
     
 }
-.main__img{
+.header__img{
     border-radius: 50%;
     height:100px;
     width:100px;
     margin:auto;
 }
 
-.main__h1{
+.header__h1{
     font-family: Inter-Bold;
     margin-top:1rem;
     
