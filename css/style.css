@@ -56,12 +56,13 @@ img{
 /*||GENERAL STYLES*/
 
 html{
+    scroll-behavior: smooth;
     display:grid;
     place-content:center;
     min-height:100vh;
     background-color: var(--BG-COLOR);
-
 }
+
 body{
     background-color: var(--MAIN-COLOR);
     min-width:350px;
@@ -70,7 +71,6 @@ body{
     color:var(--FONT-COLOR);
     line-height:2rem;
     text-align: center;
-   
 }
 
 
@@ -78,9 +78,9 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
-    
-    
 }
+
+
 .header__img{
     border-radius: 50%;
     height:100px;
@@ -129,14 +129,14 @@ a, a:visited{
     border-radius: 5px;
     margin-top:1rem;
     background-color: var(--LINK-BG-COLOR);
- 
-}
+ }
 
 a:hover, a:focus{
     background-color:rgb(148, 148, 52);
     color:antiquewhite;
     cursor:pointer;
 }
+
 a:active{
     color:blue;
 }
