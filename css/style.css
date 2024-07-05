@@ -65,7 +65,7 @@ html{
 
 body{
     background-color: var(--MAIN-COLOR);
-    min-width:350px;
+    width:100%;
     padding:var(--PADDING);
     border-radius: 15px;
     color:var(--FONT-COLOR);
